@@ -28,13 +28,6 @@ html {
   block-size: 100%;
 }
 
-.normal-text {
-  margin: 0;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-}
-
 .visually-hidden {
   position: absolute;
   overflow: hidden;
@@ -55,7 +48,7 @@ html {
   font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   background-color: #1b1919;
-  inline-size: 1140px;
+  inline-size: 1200px;
   block-size: 100%;
 }
 
@@ -63,8 +56,7 @@ html {
   display: flex;
   align-items: end;
   gap: 30px;
-  inline-size: 100%;
-  block-size: 534px;
+  inline-size: 1140px;
 }
 
 .result {
@@ -83,6 +75,7 @@ html {
 
 .result__video {
   object-fit: cover;
+  object-position: center;
   inline-size: 100%;
   block-size: 100%;
 }
@@ -91,7 +84,6 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: end;
-  block-size: 54px;
 }
 
 .search-form__fieldset {
@@ -173,7 +165,6 @@ html {
 }
 
 .button:focus-visible {
-  margin: 3px;
   outline: 1px solid #fff;
   outline-offset: 2px;
 }
@@ -193,8 +184,9 @@ html {
 }
 
 .more-button {
-  margin-inline-start: 2px;
+  margin-inline-start: 3px;
   margin-block-start: 30px;
+  margin-block-end: 3px;
   inline-size: 390px;
 }
 
@@ -202,7 +194,7 @@ html {
   margin-block-end: 20px;
   font-family: Oswald, sans-serif;
   font-size: 75px;
-  line-height: 70.5px;
+  line-height: 0.94;
   text-transform: uppercase;
 }
 
@@ -224,7 +216,7 @@ html {
   display: flex;
   flex-direction: column;
   gap: 30px;
-  padding: 3px;
+  padding: 4px;
 }
 
 /* Кастомный скроллбар */
@@ -278,7 +270,7 @@ html {
 
 .content__video-card-title {
   overflow: hidden;
-  font-family: Oswald;
+  font-family: Oswald, sans-serif;
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
@@ -302,6 +294,5 @@ html {
 }
 
 .content__card-link_current {
-  display: inline-block;
   background-color: #545050;
 }
